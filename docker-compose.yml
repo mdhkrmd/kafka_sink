@@ -71,6 +71,8 @@ services:
       STATUS_STORAGE_TOPIC: connect-status-target
       STATUS_STORAGE_REPLICATION_FACTOR: -1
       CONNECT_SCHEDULED_REBALANCE_MAX_DELAY_MS: 0
+      CONFIG_PROVIDERS: file
+      CONFIG_PROVIDERS_FILE_CLASS: org.apache.kafka.common.config.provider.FileConfigProvider
       KEY_CONVERTER: org.apache.kafka.connect.json.JsonConverter
       VALUE_CONVERTER: org.apache.kafka.connect.json.JsonConverter
       PLUGIN_PATH: /kafka/connect
