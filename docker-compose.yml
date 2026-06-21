@@ -78,6 +78,7 @@ services:
       PLUGIN_PATH: /kafka/connect
     volumes:
       - ./secrets:/kafka/secrets:ro,z
+      - ../unem-cdc-dashboard/uploads/connect-secrets:/kafka/secrets/uploads:ro,z
     networks:
       - knet_main
 

@@ -39,6 +39,8 @@ ${file:/kafka/secrets/target.properties:sasl.jaas.config}
 ${file:/kafka/secrets/target.properties:truststore.password}
 ```
 
+Untuk fitur upload JKS dari UI, `kconnect-target` juga me-mount `../unem-cdc-dashboard/uploads/connect-secrets` sebagai `/kafka/secrets/uploads:ro`. Buat directory ini di repo dashboard sebelum recreate stack jika belum ada.
+
 ## Stop
 
 ```bash
